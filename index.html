@@ -10,8 +10,9 @@
 
   <meta
           name="description"
-          content="Приглашение на свадьбу"
+          content="Азиза & Бекболат  |  27.09.2026"
   />
+  <link rel="icon" type="image/svg+xml" href="/images/rings.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -22,11 +23,26 @@
 <main>
   <!-- Первый экран -->
   <section class="hero">
-    <div class="music-toggle" id="musicToggle" role="button" tabindex="0" aria-label="Включить музыку">
-      <svg class="music-toggle__ring" viewBox="0 0 100 100">
+    <div
+            class="music-toggle"
+            id="musicToggle"
+            role="button"
+            tabindex="0"
+            aria-label="Включить музыку"
+    >
+      <svg
+              class="music-toggle__ring"
+              viewBox="0 0 100 100"
+              width="90"
+              height="90"
+      >
         <defs>
-          <path id="circlePath" d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
+          <path
+                  id="circlePath"
+                  d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
+          />
         </defs>
+
         <text class="music-toggle__text">
           <textPath href="#circlePath" startOffset="0%">
             Музыканы қосу үшін басыңыз • Музыканы қосу үшін басыңыз •
@@ -34,16 +50,41 @@
         </text>
       </svg>
 
-      <svg class="music-toggle__icon music-toggle__icon--play" viewBox="0 0 24 24">
-        <polygon points="8,5 19,12 8,19" fill="currentColor" />
+      <svg
+              class="music-toggle__icon music-toggle__icon--play"
+              viewBox="0 0 24 24"
+              width="45"
+              height="45"
+      >
+        <polygon
+                points="8,5 19,12 8,19"
+                fill="currentColor"
+        />
       </svg>
 
-      <svg class="music-toggle__icon music-toggle__icon--pause" viewBox="0 0 24 24" style="display:none">
-        <rect x="6" y="5" width="4" height="14" fill="currentColor" />
-        <rect x="14" y="5" width="4" height="14" fill="currentColor" />
+      <svg
+              class="music-toggle__icon music-toggle__icon--pause"
+              viewBox="0 0 24 24"
+              width="45"
+              height="45"
+              style="display: none"
+      >
+        <rect
+                x="6"
+                y="5"
+                width="4"
+                height="14"
+                fill="currentColor"
+        />
+        <rect
+                x="14"
+                y="5"
+                width="4"
+                height="14"
+                fill="currentColor"
+        />
       </svg>
     </div>
-
     <audio id="bgMusic" loop></audio>
 
 
