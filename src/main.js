@@ -62,7 +62,7 @@ musicToggle.addEventListener('keydown', (event) => {
 // COUNTDOWN
 // ============================================================
 
-const weddingDate = new Date('2026-10-17T16:00:00')
+const weddingDate = new Date('2026-09-27T18:00:00')
 
 const countdownValues = {
     days: document.querySelector('[data-unit="days"]'),
