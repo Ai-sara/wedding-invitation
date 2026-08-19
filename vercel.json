@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/yelubaevtar",
+      "destination": "/yelubaevtar.html"
+    }
+  ]
+}
