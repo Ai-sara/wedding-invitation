@@ -572,6 +572,7 @@ footer {
 .countdown {
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 
@@ -971,6 +972,11 @@ footer {
   margin: 0;
 }
 
+.form-field__example{
+  font-size: 14px;
+  font-style: italic;
+}
+
 
 /* ------------------------------------------------------------
    Submit button
@@ -1028,6 +1034,12 @@ footer {
   height: auto;
 
   margin: 8px auto -260px;
+}
+
+.footer__text-main{
+  font-family: var(--font-heading);
+  font-size: 50px;
+  line-height: 1;
 }
 
 
@@ -1259,11 +1271,7 @@ footer {
   }
 
 }
-.footer__text-main{
-  font-family: var(--font-heading);
-  font-size: 50px;
-  line-height: 1;
-}
+
 
 .fade-in {
   opacity: 0;
