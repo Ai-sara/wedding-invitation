@@ -1262,6 +1262,7 @@ footer {
 .footer__text-main{
   font-family: var(--font-heading);
   font-size: 50px;
+  line-height: 1;
 }
 
 .fade-in {

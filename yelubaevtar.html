@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+            name="description"
+            content="Бекболат & Азиза  |  27.09.2026"
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/rings.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Бекболат & Азиза  |  27.09.2026</title>
+    <style>
+        html {
+            visibility: hidden;
+        }
+
+        html.is-loaded {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <!-- Первый экран -->
+    <section class="hero">
+        <div
+                class="music-toggle"
+                id="musicToggle"
+                role="button"
+                tabindex="0"
+                aria-label="Включить музыку"
+        >
+            <svg
+                    class="music-toggle__ring"
+                    viewBox="0 0 100 100"
+                    width="90"
+                    height="90"
+            >
+                <defs>
+                    <path
+                            id="circlePath"
+                            d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
+                    />
+                </defs>
+
+                <text class="music-toggle__text">
+                    <textPath href="#circlePath" startOffset="0%">
+                        Музыканы қосу үшін басыңыз • Музыканы қосу үшін басыңыз •
+                    </textPath>
+                </text>
+            </svg>
+
+            <svg
+                    class="music-toggle__icon music-toggle__icon--play"
+                    viewBox="0 0 24 24"
+                    width="45"
+                    height="45"
+            >
+                <polygon
+                        points="8,5 19,12 8,19"
+                        fill="currentColor"
+                />
+            </svg>
+
+            <svg
+                    class="music-toggle__icon music-toggle__icon--pause"
+                    viewBox="0 0 24 24"
+                    width="45"
+                    height="45"
+                    style="display: none"
+            >
+                <rect
+                        x="6"
+                        y="5"
+                        width="4"
+                        height="14"
+                        fill="currentColor"
+                />
+                <rect
+                        x="14"
+                        y="5"
+                        width="4"
+                        height="14"
+                        fill="currentColor"
+                />
+            </svg>
+        </div>
+        <audio id="bgMusic" loop></audio>
+
+
+        <div class="hero__bg-wrapper">
+            <img class="hero__background" alt="">
+        </div>
+
+        <div class="hero__content">
+            <p class="hero__subtitle">
+                Уйлену той
+            </p>
+            <h1 class="hero__title">
+                Бекболат & Азиза
+            </h1>
+        </div>
+    </section>
+
+    <!-- Текст приглашения -->
+    <section class="invitation">
+        <div class="container">
+            <div class="content-container">
+
+                <h2 class="section-title">
+                    Құрметті ағайын-туыс, бауырлар,
+                    құда-жекжат, дос-жаран!
+                </h2>
+
+                <p class="invitation__text">
+                    Сіздерді балаларымыз<br>
+                    <span class="invitation__text-name">Бекболат</span><br>
+                    пен<br>
+                    <span class="invitation__text-name">Азизаның</span><br>
+                    үйлену тойына арналған салтанатты ақ
+                    дастарханымыздың қадірлі қонағы болуға
+                    шақырамыз!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Галерея  -->
+    <section class="gallery">
+        <img
+                class="gallery__star gallery__star--large"
+                src="/images/star.svg"
+                alt=""
+                aria-hidden="true"
+        >
+
+        <img
+                class="gallery__star gallery__star--small gallery__star--left"
+                src="/images/star.svg"
+                alt=""
+                aria-hidden="true"
+        >
+
+        <img
+                class="gallery__star gallery__star--small gallery__star--right"
+                src="/images/star.svg"
+                alt=""
+                aria-hidden="true"
+        >
+        <div class="container">
+            <div class="content-container">
+
+                <h2 class="section-title">
+                    Біздің махаббатымыз
+                </h2>
+
+                <div class="gallery__slider">
+                    <div class="gallery__track">
+
+                        <div class="gallery__slide">
+                            <img
+                                    src="./images/photo-1.jpeg"
+                                    alt="Бекболат пен Азиза "
+                                    loading="lazy"
+                            >
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img
+                                    src="./images/photo-2.jpeg"
+                                    alt="Бекболат пен Азиза "
+                                    loading="lazy"
+                            >
+                        </div>
+
+                        <div class="gallery__slide">
+                            <img
+                                    src="./images/photo-3.jpeg"
+                                    alt="Бекболат пен Азиза "
+                                    loading="lazy"
+                            >
+                        </div>
+                        <div class="gallery__slide">
+                            <img
+                                    src="./images/photo-4.jpeg"
+                                    alt="Бекболат пен Азиза "
+                                    loading="lazy"
+                            >
+                        </div>
+                        <div class="gallery__slide">
+                            <img
+                                    src="./images/photo-1.jpeg"
+                                    alt="Бекболат пен Азиза "
+                                    loading="lazy"
+                            >
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="gallery__dots" aria-hidden="true"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Дата и календарь -->
+    <section class="event-date">
+        <img
+                class="event-date__flower event-date__flower--left"
+                src="/images/flower.png"
+                alt=""
+                aria-hidden="true"
+        >
+
+        <img
+                class="event-date__flower event-date__flower--right"
+                src="/images/flower.png"
+                alt=""
+                aria-hidden="true"
+        >
+        <div class="container">
+            <div class="content-container">
+
+                <h2 class="section-title">
+                    Той салтанаты
+                </h2>
+
+                <p class="event-date__date">
+                    27 қыркүйек 2026 жыл
+                </p>
+
+                <p class="event-date__weekday">
+                    Жексенбі · 18:00
+                </p>
+
+                <div class="calendar">
+                    <div class="calendar__header">
+                        <h3 class="calendar__month">
+                            Қыркүйек
+                        </h3>
+                    </div>
+
+                    <div class="calendar__weekdays">
+                        <span>Дс</span>
+                        <span>Сс</span>
+                        <span>Сс</span>
+                        <span>Бс</span>
+                        <span>Жм</span>
+                        <span>Сб</span>
+                        <span>Жс</span>
+                    </div>
+
+                    <div class="calendar__days">
+                        <span></span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+
+                        <span>20</span>
+                        <span>21</span>
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span>26</span>
+
+                        <span class="calendar__day--highlighted">
+              <svg class="calendar__day-blob" viewBox="0 0 60 60" preserveAspectRatio="none">
+                <path d="M 8,30
+                         C 8,15 18,6 30,7
+                         C 42,8 52,14 53,28
+                         C 54,42 44,53 30,53
+                         C 16,53 8,45 8,30 Z" />
+              </svg>
+              <span class="calendar__day-number">27</span>
+            </span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span>30</span>
+                        <span>31</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Обратный отсчёт -->
+    <section class="countdown">
+        <div class="container">
+            <div class="content-container">
+                <h2 class="section-title">
+                    Тойымызға дейін қалған уақыт
+                </h2>
+
+                <div
+                        class="countdown__items"
+                        aria-label="Обратный отсчёт до свадьбы"
+                >
+                    <div class="countdown__item">
+          <span
+                  class="countdown__value"
+                  data-unit="days"
+          >
+            00
+          </span>
+
+                        <span class="countdown__label">
+            дней
+          </span>
+                    </div>
+
+                    <div class="countdown__item">
+          <span
+                  class="countdown__value"
+                  data-unit="hours"
+          >
+            00
+          </span>
+
+                        <span class="countdown__label">
+            часов
+          </span>
+                    </div>
+
+                    <div class="countdown__item">
+          <span
+                  class="countdown__value"
+                  data-unit="minutes"
+          >
+            00
+          </span>
+
+                        <span class="countdown__label">
+            минут
+          </span>
+                    </div>
+
+                    <div class="countdown__item">
+          <span
+                  class="countdown__value"
+                  data-unit="seconds"
+          >
+            00
+          </span>
+
+                        <span class="countdown__label">
+            секунд
+          </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img
+                class="countdown__star countdown__star--top"
+                src="/images/star.svg"
+                alt=""
+                aria-hidden="true"
+        >
+        <img
+                class="countdown__star countdown__star--bottom"
+                src="/images/star.svg"
+                alt=""
+                aria-hidden="true"
+        >
+    </section>
+
+    <!-- Место проведения -->
+    <section class="location">
+        <div class="container">
+
+            <div class="content-container">
+
+                <h2 class="section-title">
+                    Той салтанаты өтетін мекенжай
+                </h2>
+
+                <div class="location__content">
+
+                    <p class="location__name">
+                        Madeniet Grand Hall
+                    </p>
+
+                    <address class="location__address">
+                        Алматы қаласы,<br />
+                        Мәдениет, 184
+                    </address>
+
+                    <a
+                            class="location__link"
+                            href="https://go.2gis.com/3ATbS"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                    >
+                        2GIS картасынан көру
+                    </a>
+                </div>
+                <img
+                        class="location__image"
+                        src="/images/table-set.png"
+                        alt=""
+                        aria-hidden="true"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- Анкета гостя -->
+    <section class="rsvp">
+        <img
+                class="rsvp__star"
+                src="/images/star.svg"
+                alt=""
+                aria-hidden="true"
+        >
+        <div class="container">
+            <div class="content-container">
+
+                <h2 class="section-title">
+                    Тойға келуіңізді<br>
+                    растауыңызды сұраймыз!
+                </h2>
+
+                <div class="rsvp__description">
+                    <p>
+                        Егер жұбыңызбен келетін болсаңыз,
+                        екеуіңіздің де есімдеріңізді көрсетіңіз.
+                    </p>
+                </div>
+
+                <form
+                        class="rsvp__form"
+                        action="https://script.google.com/macros/s/AKfycbzzzeeEvd-NzdHVw0LVlnRokB9UAKRKuW04wGs9Pi9Jeqas-a2BAcaKFEyW9_Knvi1c/exec"
+                        method="POST"
+                >
+                    <div class="form-field">
+                        <label for="guest-name">
+                            Есіміңізді жазыңыз
+                        </label>
+
+                        <input
+                                id="guest-name"
+                                name="guest-name"
+                                type="text"
+                                autocomplete="name"
+                                placeholder="Есіміңіз"
+                                required
+                        />
+                    </div>
+
+                    <fieldset class="form-field">
+
+                        <legend>
+                            Тойға қатысасыз ба?
+                        </legend>
+
+                        <div class="attendance-options">
+
+                            <label class="attendance-option">
+                                <input
+                                        type="radio"
+                                        name="attendance"
+                                        value="yes"
+                                        required
+                                />
+
+                                <span>
+                Әрине, келемін
+              </span>
+                            </label>
+
+                            <label class="attendance-option">
+                                <input
+                                        type="radio"
+                                        name="attendance"
+                                        value="couple"
+                                />
+
+                                <span>
+                Жұбыммен / жұбайыммен келемін
+              </span>
+                            </label>
+
+                            <label class="attendance-option">
+                                <input
+                                        type="radio"
+                                        name="attendance"
+                                        value="no"
+                                />
+
+                                <span>
+                Өкінішке қарай, келе алмаймын
+              </span>
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+                    <button
+                            class="rsvp__button"
+                            type="submit"
+                    >
+                        Жауапты жіберу
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+        <img
+                class="rsvp__flower"
+                src="/images/flower.png"
+                alt=""
+                aria-hidden="true"
+        >
+    </section>
+</main>
+
+<!-- Финальный блок -->
+<footer class="footer">
+    <div class="container">
+        <div class="content-container">
+
+            <p class="footer__text">
+                Келіңіздер, қуанышымызға ортақ болыңыздар!
+            </p>
+            <p class="footer__text-main">
+                Той иесі Жәудіркөз, Елубаевтар отбасы
+            </p>
+            <img
+                    class="footer__flower"
+                    src="/images/flower.png"
+                    alt=""
+                    aria-hidden="true"
+            >
+
+        </div>
+    </div>
+</footer>
+
+<script
+        type="module"
+        src="/src/main.js"
+></script>
+</body>
+</html>
