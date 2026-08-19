@@ -192,27 +192,29 @@ const rsvpForm = document.querySelector('.rsvp__form')
 const googleScriptUrl =
     'https://script.google.com/macros/s/AKfycbzzzeeEvd-NzdHVw0LVlnRokB9UAKRKuW04wGs9Pi9Jeqas-a2BAcaKFEyW9_Knvi1c/exec'
 
-
-rsvpForm.addEventListener('submit', async (event) => {
+rsvpForm.addEventListener('submit', (event) => {
     event.preventDefault()
 
     const formData = new FormData(rsvpForm)
+    const submitButton = rsvpForm.querySelector('button[type="submit"]')
 
-    try {
-        await fetch(googleScriptUrl, {
-            method: 'POST',
-            body: formData
+    // Сразу блокируем повторную отправку
+    submitButton.disabled = true
+
+    // Сразу показываем сообщение
+    alert('Рақмет! Жауабыңыз қабылданды ❤️')
+
+    // Очищаем форму
+    rsvpForm.reset()
+
+    // Отправляем данные в Google Sheets в фоне
+    fetch(googleScriptUrl, {
+        method: 'POST',
+        body: formData
+    })
+        .catch((error) => {
+            console.error('Ошибка отправки:', error)
         })
-
-        alert('Рақмет! Жауабыңыз қабылданды ❤️')
-
-        rsvpForm.reset()
-
-    } catch (error) {
-        console.error(error)
-
-        alert('Қате орын алды. Қайтадан көріңіз.')
-    }
 })
 
 const sections = document.querySelectorAll('section');
